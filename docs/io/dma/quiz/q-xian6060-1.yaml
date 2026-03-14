@@ -7,7 +7,7 @@ options:
   - text: "可以，使用 Zero-copy 可以減少資料搬運量，提高效率。"
     explanation: |
       Zero-copy 不須 CPU 介入，更適合靜態資料的搬移，而 AES 加密需 CPU 進行處理。
-  - text: "不可以，AES 運算是 CPU 密集型任務，不能使用 Zero-copy。"
+  - text: "不可以，資料必須經過 CPU 暫存器才能進行加密運算，不能使用 Zero-copy。"
     correct: true
     explanation: |
       資料必須經過 CPU 暫存器，才能進行 AES 運算。
